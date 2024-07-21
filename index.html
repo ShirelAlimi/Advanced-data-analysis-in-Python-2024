@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופס לחיזוי ערך הרכב</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .header {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>טופס לחיזוי ערך הרכב</h1>
+    </div>
+    <div class="form-container">
+        <form action="/estimate_price" method="post">
+            <label for="manufactor">Manufacturer:</label>
+            <input type="text" id="manufactor" name="manufactor" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="km">Kilometers Driven:</label>
+            <input type="number" id="km" name="km" required>
+
+            <label for="engine_capacity">Engine Capacity:</label>
+            <input type="number" id="engine_capacity" name="engine_capacity" required>
+
+            <label for="gear">Gear Type:</label>
+            <input type="text" id="gear" name="gear" required>
+
+            <label for="engine_type">Engine Type:</label>
+            <input type="text" id="engine_type" name="engine_type" required>
+
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <button type="submit">הערך מחיר</button>
+        </form>
+    </div>
+</body>
+</html>
